@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chotu Valentine's Day</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-background {
+      background: linear-gradient(180deg, rgba(255, 208, 229, 1) 0%, rgba(255, 232, 242, 1) 36%, rgba(255, 255, 255, 1) 100%);
+    }
+
+    .bounce2 {
+      animation: bounce2 2s ease infinite;
+    }
+
+    @keyframes bounce2 {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-20px);
+      }
+
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+
+<body class="gradient-background flex justify-center items-center h-screen ">
+  <div id="main-container" class="w-full max-w-md flex flex-col items-center text-center">
+
+    <!-- Page 1: Heart Collage -->
+    <div id="page1" class="flex flex-col items-center w-full">
+      <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">Dear Chootu<33 </h2>
+          <img src="./images/1.png" alt="Heart Shape Collage"
+            class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br>
+          <button onclick="showPage(10)" class="bg-blue-500 text-white px-6 py-2 font-bold rounded-md mt-6 text-lg"
+            style="color: white; background: #DE3163;">You make me UN POCO LOCO</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2" class="hidden flex flex-col items-center w-full">
+      <h2 class="text italic text-[#bd1e59] my-6">Today i realized just how quick time flies, esa lagta hai jese hum
+        kal hee mile thee. <br>
+        haan hum bahut zada ladte jagharte hai, but pyaar bhi utna he karte hai. <br>
+        you are very special to me, and i feel most alive and happy, when i am with you.
+
+
+      </h2>
+      <img src="./images/rand1.jpg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" />
+      <h2 class="text italic text-[#bd1e59] my-6">i want to kiss your face every damn day, and want to grow old with
+        you</h2>
+      <button onclick="showPage(15)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next✨</button>
+    </div>
+
+
+    <div id="page10" class="hidden flex flex-col items-center w-full">
+      <h2 class="text italic text-[#bd1e59] my-6">Every love story is beautiful, but ours is my favorite. Today, I
+        have
+        something special for you. <br> <br> Ready to take a trip ?</h2>
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">The Final Stezx p</h2> -->
+      <br> <button onclick="showPage(2)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Start the Journey✨</button>
+    </div>
+
+
+    <div id="page15" class="hidden flex flex-col items-center w-full">
+      <br><br>
+      <h2 class="text italic text-[#bd1e59] my-6">there are countless reasons why I love you. But here are just a few
+        that make you the most incredible person in my life: <br> <br>
+
+        You make even ordinary moments magical✨ <br>
+        Your laughter feels like home🏡 <br>
+        You believe in me🌟 <br>
+        you make me want to be a better person💖 <br>
+        You love me, even in my worst moments🌧️ <br>
+        You make life feel like an adventure🚀 <br>
+        You make me laugh when I need it most😂 <br>
+        You are effortlessly beautiful, inside and out🌺 <br> <br>
+
+        I could go on forever, but the truth is, I love you for everything you are. You make my world brighter, my heart
+        fuller, and my life more beautiful. <br>
+        I am blessed to have you in my life❤️</h2>
+
+      <img src="./images/rand (2).jpg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" />
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">The Final Stezx p</h2> -->
+      <button onclick="showPage(3)" id="nextQuizBtn"
+        class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next✨</button>
+    </div>
+
+
+    <!-- Page 3 -->
+    <div id="page3" class="hidden flex flex-col items-center w-full"> <br> <br>
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">A Beautiful Journey</h2> -->
+      <img src="./images/1.jpeg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br>
+      <img src="./images/rand2.jpg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br>
+      <button onclick="showPage(4)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next</button>
+    </div>
+
+    <!-- Page 4 -->
+    <div id="page4" class="hidden flex flex-col items-center w-full">
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">The Final Stdgep</h2> -->
+      <img src="./images/2.jpeg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br>
+      <img src="./images/rand (1).jpg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br>
+      <button onclick="showPage(5)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next</button>
+    </div>
+    <!-- Page 5-->
+    <div id="page5" class="hidden flex flex-col items-center w-full"> <br>
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">The Final Sttjep</h2> -->
+      <img src="./images/3.jpeg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br> <img src="./images/20221226_153052.jpg"
+        alt="Heart Shape Collage" class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br><button
+        onclick="showPage(6)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next</button>
+    </div>
+    <!-- Page 6 -->
+    <div id="page6" class="hidden flex flex-col items-center w-full"> <br> <br> <br> <br> <br>
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">The Final Stephiky</h2> -->
+      <img src="./images/4.jpeg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br> <img src="./images/sfvs.jpg"
+        alt="Heart Shape Collage" class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <button
+        onclick="showPage(7)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next</button>
+    </div>
+    <!-- Page 7 -->
+    <div id="page7" class="hidden flex flex-col items-center w-full"> <br>
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">The Final Steesfsp</h2> -->
+      <img src="./images/5.jpeg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br> <img src="./images/rand (4).jpg"
+        alt="Heart Shape Collage" class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br><button
+        onclick="showPage(8)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next</button>
+    </div>
+    <!-- Page 8 -->
+    <div id="page8" class="hidden flex flex-col items-center w-full"> <br><br>
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">The Final Ste42p</h2> -->
+      <img src="./images/6.jpeg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br><img src="./images/rand (5).jpg"
+        alt="Heart Shape Collage" class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br> <button
+        onclick="showPage(9)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next</button>
+    </div>
+    <!-- Page 9 -->
+    <div id="page9" class="hidden flex flex-col items-center w-full"> <br><br><br>
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">The Final Stewsxdqp</h2> -->
+      <img src="./images/7.jpeg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br><img src="./images/bing.png"
+        alt="Heart Shape Collage" class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br> <button
+        onclick="showPage(11)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next</button>
+    </div>
+    <!-- Page 10 -->
+
+    <!-- Page 11 -->
+    <div id="page11" class="hidden flex flex-col items-center w-full">
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">The Final Ssdcstep</h2> -->
+      <img src="./images/9.jpeg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br> <img src="./images/rand (8).jpg"
+        alt="Heart Shape Collage" class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br><button
+        onclick="showPage(12)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next</button>
+    </div>
+    <!-- Page 12 -->
+    <div id="page12" class="hidden flex flex-col items-center w-full"><br>
+      <!-- <h2 class="text-3xl font-bold italic text-[#bd1e59] my-6">The Final Ste823p</h2> -->
+      <img src="./images/10.jpeg" alt="Heart Shape Collage"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br> <img src="./images/diwali.jpg"
+        alt="Heart Shape Collage" class="rounded-md w-full max-w-[280px] h-auto object-cover" /> <br><button
+        onclick="showPage(13)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg font-bold"
+        style="color: white; background: #DE3163;">Next</button>
+    </div>
+    <!-- Page 13 -->
+    <div id="page13" class="hidden flex flex-col items-center w-full">
+      <h2 class="text-xl font-medium italic text-[#bd1e59] my-6">WARNING: Your system has been compromised by a love
+        virus!</h2>
+      <h2 class="text-xl font-medium italic text-[#bd1e59] my-6">Only way to fix it: Say YES to being my Valentine!
+      </h2>
+      <button onclick="showPage(14)" class="bg-blue-500 text-white px-6 py-2 rounded-md text-lg"
+        style="color: white; background: #DE3163;">Next</button>
+    </div>
+
+    <!-- Page 5: Valentine Proposal -->
+    <div id="page14" class="hidden flex flex-col items-center w-full">
+      <img id="imageDisplay" src="./images/11.jpeg" alt="Cute kitten with flowers"
+        class="rounded-md w-full max-w-[280px] h-auto object-cover" />
+      <h2 id="valentineQuestion" class="text-3xl font-bold italic text-[#bd1e59] my-6">Will you be my Valentine?</h2>
+      <br>
+      <div id="responseButtons" class="flex gap-4 pt-4">
+        <button id="yesButton"
+          class="bounce2 inline-flex items-center justify-center rounded-md text-xl font-medium px-6 py-3 bg-green-500 text-white hover:bg-green-400 transition">
+          Yes
+        </button>
+        <button id="noButton"
+          class="inline-flex items-center justify-center rounded-md text-xl font-medium px-6 py-3 bg-red-500 text-white hover:bg-red-700 transition">
+          No
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- JavaScript for Page Switching -->
+  <script>
+    function showPage(pageNumber) {
+      for (let i = 1; i <= 15; i++) {
+        document.getElementById('page' + i).classList.add('hidden');
+      }
+      document.getElementById('page' + pageNumber).classList.remove('hidden');
+    }
+  </script>
+
+  <!-- JavaScript for Yes/No Button Interactions -->
+  <script type="module">
+    import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+    const imageDisplay = document.getElementById('imageDisplay');
+    const valentineQuestion = document.getElementById('valentineQuestion');
+    const responseButtons = document.getElementById('responseButtons');
+
+    let noClickCount = 0;
+    let buttonHeight = 48;
+    let buttonWidth = 100;
+    let fontSize = 20;
+
+    const imagePaths = [
+      "./images/image1.gif",
+      "./images/12.jpeg",
+      "./images/image3.gif",
+      "./images/image4.gif",
+      "./images/image5.gif",
+      "./images/image6.gif",
+      "./images/image3.gif",
+      "./images/image4.gif",
+      "./images/image5.gif"
+    ];
+
+    noButton.addEventListener('click', function () {
+      if (noClickCount < 7) {
+        noClickCount++;
+        imageDisplay.src = imagePaths[noClickCount];
+        buttonHeight += 20;
+        buttonWidth += 20;
+        fontSize += 4;
+        yesButton.style.height = `${buttonHeight}px`;
+        yesButton.style.width = `${buttonWidth}px`;
+        yesButton.style.fontSize = `${fontSize}px`;
+
+        if (noClickCount < 8) {
+          noButton.textContent = [
+            "No", "Are you sure?", "Try again...I'm not giving up that easily!", "click YES, Bahut sare chocklates khilaunga :)", "accha, sath me bhut sara pani-puri bhiii", "Babe, Click YES, Offer mae complete body massage bhi hai", "Bahut sara kisses for 'YES!'", "you just broke my heart. Please restart your emotions :("
+          ][noClickCount];
+        }
+      }
+    });
+
+    yesButton.addEventListener('click', () => {
+      // Hide the image display and response buttons
+      imageDisplay.style.display = 'none';
+      responseButtons.style.display = 'none';
+      valentineQuestion.style.display = 'none';
+
+      // Call confetti function
+      confetti();
+
+      // Create a video element
+      const videoElement = document.createElement('video');
+      videoElement.src = './images/videooo.mp4';  // Replace with your video file
+      videoElement.autoplay = true;
+      videoElement.loop = true;
+      videoElement.style.width = '60%';  // Adjust width as needed (e.g., 60% of screen width)
+      videoElement.style.height = 'auto';  // Maintain the aspect ratio
+      videoElement.style.margin = '20px auto'; // Center the video with margin
+      videoElement.style.display = 'block'; // Ensure it's displayed as a block element
+      videoElement.style.borderRadius = '10px'; // Optional: rounded corners for the video frame
+      videoElement.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.5)'; // Optional: shadow for the frame
+
+      // Append the video element to the body
+      document.body.appendChild(videoElement);
+
+      // Create the "I Love You" text
+      const loveText = document.createElement('p');
+      loveText.textContent = "I Love You <333";
+      loveText.style.textAlign = 'center'; // Center the text
+      loveText.style.fontSize = '24px'; // Adjust the font size as needed
+      loveText.style.fontWeight = 'bold'; // Optional: bold text
+      loveText.style.color = '#ff3366'; // Optional: color for the text
+
+      // Append the text below the video
+      document.body.appendChild(loveText);
+    });
+
+
+  </script>
+
+  <!-- reasons why i love you
+  page 2 note/feelings
+  last page video
+  -->
+
+</body>
+
+</html>
